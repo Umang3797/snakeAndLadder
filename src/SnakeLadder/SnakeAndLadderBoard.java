@@ -3,10 +3,10 @@ import java.util.*;
 
 public class SnakeAndLadderBoard {
 	private int size;
-    private List<Snake> snakes; // The board also contains some snakes and ladders.
-    private List<Ladder> ladders;
-    private Map<String, Integer> playerPieces;
-    
+	private List<Snake> snakes;
+	private List<Ladder> ladders;
+	private Map<String, Integer> playerPieces;
+
 	public SnakeAndLadderBoard(int size) {
 		this.size = size;
 		this.setSnakes(new ArrayList<Snake>());
@@ -40,6 +40,9 @@ public class SnakeAndLadderBoard {
 
 	public void setPlayerPieces(Map<String, Integer> playerPieces) {
 		this.playerPieces = playerPieces;
-	}    
-    
+	}
+
+	public int getInitialNoOfPlayers() {
+		return playerPieces.size();
+	}
 }

@@ -2,19 +2,20 @@ package SnakeLadder;
 import java.util.*;
 
 public class Player {
-	private String name;
 	private String id;
-	
-	public Player(String name) {
+	private String name;
 
-		this.name = name;
+	public Player(String name) {
 		this.id = UUID.randomUUID().toString();
+		this.name = name;
 	}
-	public String getName() {
-		return name;
-	}
+
 	public String getId() {
 		return id;
 	}
-	
+
+	public String getName() {
+		return name;
+	}
 }
+
